@@ -4,7 +4,7 @@ This repo contains a code test for Universal Weather and Aviation.
 
 Further information regarding running the application can be found in the uwa-exercise readme.
 
-##Issues and further development
+## Issues and further development
 
 As this application was completed under timed circumstances, the following considerations and remaining items need to be completed before considering the project v1.
 
@@ -20,7 +20,7 @@ As this application was completed under timed circumstances, the following consi
 * Teams can be scheduled as both Team 1 and Team 2
 
 
-##Unit Tests
+## Unit Tests
 
 Unit tests were not completed under the time considerations but are stubbed in as part of the Angular CLI project creation.
 
