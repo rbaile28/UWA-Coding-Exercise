@@ -1,0 +1,41 @@
+
+div{
+    padding:5vh 10vw;
+
+    h3{
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    #teamSchedule{
+        width:100%;
+        border-spacing: 0;
+        border: 1px solid #525252;
+        -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+
+        .hidden{display:none;}
+        thead{
+            th{
+                background:#000;
+                font-size: 12px;
+                color: #fff;
+                font-family: "Josefin Sans", sans-serif;
+                text-transform: uppercase;
+                line-height: 34px;
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-family: "Source Sans Pro", sans-serif;
+                    text-align: center;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

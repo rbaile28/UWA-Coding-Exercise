@@ -1,0 +1,44 @@
+<div>
+    <h3>{{teamID}} Schedule</h3>
+    <table id="teamSchedule">
+        <thead>
+            <th>Week</th>
+            <th>Time</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+        </thead>
+        <!-- Games not featuring the selected team are hidden. Further development of a filter pipe/backend should be used to filter games. -->
+        <tbody *ngFor="let week of gamesList" >
+            <tr [class.hidden]="week['games'][0]['saturday1']['team1'] != teamID && week['games'][0]['saturday1']['team2'] != teamID">
+                <td>week {{week.week}}</td>
+                <td>Saturday 1st</td>
+                <td>Team {{week['games'][0]['saturday1']['team1']}}</td>
+                <td>Team {{week['games'][0]['saturday1']['team2']}}</td>
+            </tr>
+            <tr [class.hidden]="week['games'][0]['saturday2']['team1'] != teamID && week['games'][0]['saturday2']['team2'] != teamID">
+                <td>week {{week.week}}</td>
+                <td>Saturday 2nd</td>
+                <td>Team {{week['games'][0]['saturday2']['team1']}}</td>
+                <td>Team {{week['games'][0]['saturday2']['team2']}}</td>
+            </tr>
+            <tr [class.hidden]="week['games'][0]['sunday1']['team1'] != teamID && week['games'][0]['sunday1']['team2'] != teamID">
+                <td>week {{week.week}}</td>
+                <td>Sunday 1st</td>
+                <td>Team {{week['games'][0]['sunday1']['team1']}}</td>
+                <td>Team {{week['games'][0]['sunday1']['team2']}}</td>
+            </tr>
+            <tr [class.hidden]="week['games'][0]['sunday2']['team1'] != teamID && week['games'][0]['sunday2']['team2'] != teamID">
+                <td>week {{week.week}}</td>
+                <td>Sunday 2nd</td>
+                <td>Team {{week['games'][0]['sunday2']['team1']}}</td>
+                <td>Team {{week['games'][0]['sunday2']['team2']}}</td>
+            </tr>
+            <tr [class.hidden]="week['games'][0]['sunday3']['team1'] != teamID && week['games'][0]['sunday3']['team2'] != teamID">
+                <td>week {{week.week}}</td>
+                <td>Sunday 3rd</td>
+                <td>Team {{week['games'][0]['sunday3']['team1']}}</td>
+                <td>Team {{week['games'][0]['sunday3']['team2']}}</td>
+            </tr>
+        </tbody>
+    </table> 
+</div>

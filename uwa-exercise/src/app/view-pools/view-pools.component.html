@@ -1,0 +1,14 @@
+<ul class="collapsibleList">
+    <li *ngFor="let pool of pools; let i = index;">
+        <!-- CSS based expanding list. <label> "for" must match input ID to function -->
+        <label for="list-node{{i}}">{{pool.name}}<a [routerLink]="['/editPool', pool.name ]"><i class="far fa-edit"></i></a></label>
+        <input type="checkbox" id="list-node{{i}}" />
+        <ul>
+            <li *ngFor="let team of pool.teams">
+                {{team.name}}
+                <button [routerLink]="['/viewTeamSchedule', team.name ]"><i class="fas fa-th-list"></i></button>
+                <button [routerLink]="['/editTeam', team.name, pool.name ]"><i class="far fa-edit"></i></button>
+            </li>
+        </ul>
+    </li>
+   </ul> 

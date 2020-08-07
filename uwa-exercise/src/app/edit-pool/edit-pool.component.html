@@ -1,0 +1,18 @@
+<div>
+    <h3>Edit Pool: {{poolID}}</h3>
+    <label>Cross Division Pool</label>
+    <select  [(ngModel)]="crossDiv" [value]="crossDiv" #t>
+        <option>None</option>
+        <option *ngFor="let pool of poolList" [disabled]="pool.name == poolID">{{pool.name}}</option>
+    </select>
+    <button class="save" (click)="changeCrossDiv(t.value)">Save</button>
+    
+    <ul>
+        <li *ngFor="let team of teams" >
+            {{team.name}}
+            <button [routerLink]="['/viewTeamSchedule', team.name ]"><i class="fas fa-th-list"></i></button>
+            <button [routerLink]="['/editTeam', team.name, poolID ]"><i class="far fa-edit"></i></button>
+        </li>
+    </ul> 
+    
+</div> 

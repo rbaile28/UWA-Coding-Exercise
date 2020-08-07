@@ -1,0 +1,8 @@
+<div>
+    <h3>Edit Team</h3>
+    <input  [(ngModel)] = "teamName"><br>
+    <select [(ngModel)]="teamPool" [value]="oldPoolID">
+        <option *ngFor="let pool of _teamService.getPoolList()">{{pool.name}}</option>
+    </select>
+    <button (click)="saveTeamChanges()">Save</button>
+</div> 

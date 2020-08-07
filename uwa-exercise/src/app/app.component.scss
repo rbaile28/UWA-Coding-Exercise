@@ -1,0 +1,70 @@
+#header{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 0 5px 0 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    -webkit-box-shadow: 0px 7px 5px -6px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 7px 5px -6px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 7px 5px -6px rgba(0, 0, 0, 0.35);
+
+    h2{
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 10px;
+        letter-spacing: -1px;
+        &:focus{outline: none;}
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        float: right;
+        padding: 0 11px;
+        line-height: 25px;
+        font-size: 10px;
+        border: 1px solid white;
+        border-radius: 6px;
+        text-align: center;
+        margin: 17px 5px;
+    } 
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+router-outlet{
+    margin-top: 25px;
+}
+
+footer{
+    background: #000;
+    position: fixed;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+    height: 30px;
+    -webkit-box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.35);
+
+    p{
+        display: inline-block;
+        margin-right: 15px;
+    }
+}

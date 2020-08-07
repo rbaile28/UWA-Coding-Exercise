@@ -1,0 +1,59 @@
+.collapsibleList{
+    margin:0 auto;
+    padding:10px 0 0;
+    width:75vw;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    label{
+        cursor: pointer;
+        width: 100%;
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 14px;
+        
+        a{
+            float:right;
+            color:white;
+        }
+    }
+    li{
+        list-style: none;
+        background: #171717;
+        line-height: 30px;
+        margin-top: 5px;
+        border: 1px solid #868688;
+        border-radius: 6px;
+        padding: 5px 5px 5px 15px;
+        -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+
+        & > input{
+            display: none;
+            & + * {display: none;}
+            &:checked + * {display: block;}
+        }
+    }
+    ul{
+        padding-left:0;
+
+        li{
+            color:#fff;
+            background: #23c1bc;
+            font-size: 14px;
+
+            button{
+                float: right;
+                background: none;
+                border:1px solid #fff;
+                color:#fff;
+                margin: 5px 2px;
+                border-radius: 9px;
+                cursor: pointer;
+                &:active{outline:none;}
+            }
+        }
+    }
+}

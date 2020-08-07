@@ -1,0 +1,68 @@
+div{
+    padding:5vh 15vw;
+
+    h3{
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    table{
+        width:100%;
+        border-spacing: 0;
+        border: 1px solid #525252;
+        border-radius: 6px;
+        -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+        margin-bottom: 15px;
+
+        thead{
+            th{
+                background:#000;
+                font-size: 12px;
+                color: #fff;
+                font-family: "Josefin Sans", sans-serif;
+                text-transform: uppercase;
+                line-height: 34px;
+                &.top{border-radius: 3px 3px 0 0;}
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-family: "Source Sans Pro", sans-serif;
+                    text-align: center;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+     select{
+         width: 85%;
+         text-align: center;
+         font-family: "Josefin Sans", sans-serif;
+         height: 36px;
+         margin: 3px 0px;
+         border: 1px solid #868688;
+         border-radius: 6px;
+         -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+     }
+     button{
+         width: 100%;
+         cursor: pointer;
+         background:#171717;
+         line-height: 24px;
+         color:#fff;
+         border: 1px solid #868688;
+         border-radius: 6px;
+         padding: 5px 5px 5px 15px;
+         -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+     }
+}

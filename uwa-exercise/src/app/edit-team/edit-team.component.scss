@@ -1,0 +1,47 @@
+div{
+    padding:15vh 15vw;
+
+    h3{
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    input{
+        width: 98%;
+        text-align: center;
+        line-height: 30px;
+        display: block;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 13px;
+        border: 1px solid #868688;
+         border-radius: 6px;
+        -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+     }
+     select{
+         width:100%;
+         text-align: center;
+         font-family: "Josefin Sans", sans-serif;
+         height: 36px;
+         margin-bottom: 15px;
+         border: 1px solid #868688;
+         border-radius: 6px;
+         -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+     }
+     button{
+         width: 100%;
+         background:#171717;
+         line-height: 24px;
+         color:#fff;
+         border: 1px solid #868688;
+         border-radius: 6px;
+         padding: 5px 5px 5px 15px;
+         -webkit-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         -moz-box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+         box-shadow: 4px 7px 5px -6px rgba(0,0,0,0.35);
+     }
+}

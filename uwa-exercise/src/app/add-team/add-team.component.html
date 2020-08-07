@@ -1,0 +1,9 @@
+<div>
+    <h3>Add New Team</h3>
+    <input  [(ngModel)] = "teamName" placeholder="Team Name"><br>
+
+    <select [(ngModel)]="teamPool">
+        <option *ngFor="let pool of poolList">{{pool.name}}</option>
+    </select>
+    <button (click)="saveNewTeam()">Save</button> 
+</div>
